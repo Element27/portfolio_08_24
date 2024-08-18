@@ -1,8 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
+
+const magicRetro = localFont({
+  src: [
+    {
+      path: "../public/fonts/Magic Retro.ttf",
+    },
+  ],
+  variable: "--font-magic-retro",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${magicRetro.className} ${montserrat.className} 'p-0 m-0 '`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

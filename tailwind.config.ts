@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#B674F6",
+        secondary: "#57FFD7",
+        darker: "#2B2B2B",
+        dark: "#4A4949",
+        light: "#404040",
+        lighter: "#9D9D9D",
+             },
+      fontFamily: {
+        magic: ["var-(--font-magic-retro)"],
+        monts: ["Montserrat", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

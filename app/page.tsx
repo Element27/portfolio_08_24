@@ -1,113 +1,161 @@
+import {
+  ColorBars,
+  GradientTextWrapper,
+  MdiGithub,
+  MdiLinkedin,
+} from "@/components/icons";
+import { GithubIcon, LinkedInIcon, SendIcon } from "@/components/SendIcon";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="flex min-h-screen flex-col w-screen main-bg">
+      {/* */}
+      <section className="flex flex-col lg:flex-row items-center justify-between w-full lg:w-8/12 mx-auto py-8 lg:py-6">
+        <GradientTextWrapper>
+          <h1 className="text-4xl">AOD</h1>
+        </GradientTextWrapper>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+        <ul className="font-monts flex items-center justify-between w-full lg:w-1/3 font-medium text-base text-[#9F9E9E] px-4 my-2">
+          <li className="cursor-pointer hover:text-white duration-500">Home</li>
+          <li className="cursor-pointer hover:text-white duration-500">
+            Portfolio
+          </li>
+          <li className="cursor-pointer hover:text-white duration-500">
+            My Skills
+          </li>
+          <li className="cursor-pointer hover:text-white duration-500">
+            Contact Me
+          </li>
+        </ul>
+      </section>
+      {/*  */}
+      <section className="h-[50vh] w-screen flex items-center relative">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src={"/image.png"}
+          alt="image"
+          height={416}
+          width={416}
+          className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />
-      </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="h-full bg-tr w-full"></div>
+        <div className="h-full bg-tl w-full"></div>
+        <div className="absolute -bottom-6 left-10 ">
+          <SendIcon />
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+      <section className="h-[50vh] w-screen flex items-center relative  flex-col gap-4 justify-center text-center">
+        <p className="font-monts font-medium text-base lg:text-2xl text-white">
+          Hi, I am
+        </p>
+        <GradientTextWrapper>
+          <h1 className="text-4xl lg:text-7xl">Akinbo O. Daniel</h1>
+        </GradientTextWrapper>
+        <div className="font-monts font-medium text-base text-[#9F9E9E] w-fit ">
+          {/* <div className="flex h-1 w-full bg-white">
+            <div className="bg-primary h-full w-full" />
+            <div className="bg-secondary h-full w-full" />
+          </div> */}
+          <ColorBars height={"4px"} />
+          <p className="font-monts font-medium text-base lg:text-2xl text-white mx-4">
+            Frontend Developer
           </p>
-        </a>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <div className="flex items-center justify-center gap-6">
+          <Image
+            src={"/mdi_github.png"}
+            alt="github"
+            height={73}
+            width={73}
+            className="size-10 lg:size-14"
+          />
+          <Image
+            src={"/bi_linkedin.png"}
+            alt="linkedin"
+            height={53}
+            width={53}
+            className="size-10 lg:size-14"
+          />
+        </div>
+      </section>
+      <ColorBars height="6px" />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="w-screen min-h-screen flex items-center justify-center relative my-2">
+        <div className="w-11/12 lg:w-8/12 mx-auto flex flex-col relative">
+          {/* <GradientTextWrapper> */}
+          {/* <div className="flex "> */}
+          <h3 className="text-2xl lg:text-4xl font-magic font-bold gradient-text w-fit relative mb-4 lg:mb-8">
+            About
+          </h3>
+          {/* </div> */}
+          {/* </GradientTextWrapper> */}
+
+          <div className="thin-border-bg w-full  mx-auto min-h-48 rounded-tl-[10rem] p-1 rounded-br-[10rem] overflow-hidden flex items-center justify-center ">
+            {/* <div className="w-fit h-fit relative"> */}
+            <div className="bg-[#404040] h-full w-full rounded-tl-[10rem] rounded-br-[10rem] p-10 relative">
+              <p className="font-monts p-2 md:p-4 text-center font-medium lg:font-semibold text-[#e4e4e4]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Eveniet asperiores repellat iure earum quaerat, hic obcaecati
+                amet suscipit minus sit illum ut nemo rerum placeat temporibus,
+                possimus similique quas non voluptas corporis. In exercitationem
+                libero laboriosam consequatur molestiae architecto temporibus
+                rerum iusto eius amet at eligendi sint quod rem, odio
+                repudiandae inventore vel. Officiis tenetur perspiciatis eos
+                obcaecati veniam deserunt facere commodi laudantium aliquam odio
+                odit, cupiditate quod praesentium? Deserunt sed doloribus
+                doloremque exercitationem asperiores. Itaque minus iste
+                repudiandae sint ad ratione quas, mollitia sunt dicta eius
+                aliquam molestias fugit laudantium excepturi facere totam quis
+                saepe inventore quam laborum atque nisi quod, adipisci minima?
+                Eum rerum, fugit iste debitis exercitationem fugiat iure hic
+                sequi vitae minima voluptatem ducimus delectus nostrum
+                repudiandae illo sed eveniet. Itaque distinctio ipsum
+                repudiandae eum deserunt, dolor minus explicabo dolore
+                perferendis officia ducimus eos, quaerat rem? Consequatur,
+                veritatis aut?
+                <br />
+                <br />
+                Facilis non id inventore minima, eos nam alias, dignissimos
+                error odio incidunt voluptates voluptatibus eius molestiae ipsum
+                unde odit deserunt, culpa recusandae. Debitis perspiciatis
+                maiores inventore laborum incidunt rem saepe fugit veritatis
+                unde ex adipisci architecto aliquam laudantium, eum molestias,
+                nihil autem minima nobis non at necessitatibus ratione? Fugit
+                possimus, perferendis tenetur facilis praesentium accusantium
+                quisquam quasi molestiae reiciendis quas vitae pariatur
+                exercitationem cumque modi quia deserunt blanditiis nemo
+                consequuntur! Doloribus, aperiam sunt iure omnis nostrum eius
+                assumenda magni magnam inventore, totam delectus esse sed
+                repudiandae fuga ab officiis, odio soluta voluptatum natus
+                minus! Animi at, quidem doloremque obcaecati iusto sit
+                consequuntur quae. Excepturi inventore nihil quod.
+              </p>
+            </div>
+            <div className="absolute lg:-bottom-5 lg:-left-5 -bottom-5 -left-5 ">
+              <SendIcon />
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
+      </section>
+
+      <ColorBars height="6px" />
+
+      <section>
+        <div className="w-11/12 lg:w-10/12 mx-auto flex items-center justify-between relative my-10">
+          <h3 className="text-2xl lg:text-4xl font-magic font-bold gradient-text w-fit">
+            Portfolio
+          </h3>
+          <SendIcon />
+        </div>
+
+        <div className="w-11/12 lg:w-10/12 mx-auto flex items-center justify-between relative my-10">
+          <div></div>
+        </div>
+      </section>
     </main>
   );
 }

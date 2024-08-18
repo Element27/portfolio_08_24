@@ -31,3 +31,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* custom.css */
+.gradient-text {
+  @apply bg-gradient-to-l to-[#57FFD7] from-[#D14EFF]  text-transparent bg-clip-text;
+}
+.main-bg {
+  @apply bg-gradient-to-t to-[#404040] from-[#2B2B2B];
+}
+.card-bg {
+  @apply bg-gradient-to-tr to-[#9D9D9D] from-[#4A4949];
+}
+.bg-tr {
+  @apply bg-gradient-to-tr to-[#B674F6] from-[#4F2974];
+}
+.bg-tl {
+  @apply bg-gradient-to-tl to-[#57FFD7] from-[#006B52];
+}
+.icon-bg {
+  @apply bg-gradient-to-t to-[#B674F6] from-[#57FFD7];
+}
+.thin-border-bg {
+  @apply bg-gradient-to-l to-[#B674F6] from-[#57FFD7];
+}
+.send-icon-bg {
+  @apply bg-gradient-to-tr to-[#57FFD7] from-[#B674F6];
+}
