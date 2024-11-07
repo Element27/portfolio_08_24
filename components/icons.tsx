@@ -83,8 +83,8 @@ export function IconParkSolidMailOpen(props: SVGProps<SVGSVGElement>) {
 export function ColorBars({ height }: { height: string }) {
   return (
     <div className="flex h-1 w-full bg-white" style={{ height }}>
-      <div className="bg-primary h-full w-full" />
-      <div className="bg-secondary h-full w-full" />
+      <div className="bg-pprimary h-full w-full" />
+      <div className="bg-ssecondary h-full w-full" />
     </div>
   );
 }
